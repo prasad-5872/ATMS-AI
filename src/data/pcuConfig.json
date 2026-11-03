@@ -1,0 +1,19 @@
+{
+  "citation": "Indian Roads Congress (IRC:106-1990) Guidelines for Capacity of Urban Roads in Plain Areas",
+  "vehicleClasses": {
+    "two_wheeler": { "name": "Two-Wheeler / Motorcycle", "pcu": 0.5, "defaultShare": 0.50, "color": "#38BDF8" },
+    "car": { "name": "Passenger Car / Taxi", "pcu": 1.0, "defaultShare": 0.25, "color": "#818CF8" },
+    "auto": { "name": "Auto-Rickshaw (3W)", "pcu": 0.8, "defaultShare": 0.10, "color": "#FBBF24" },
+    "bus": { "name": "City Transit Bus", "pcu": 2.2, "defaultShare": 0.05, "color": "#F87171" },
+    "truck": { "name": "Commercial Truck / LCV", "pcu": 2.5, "defaultShare": 0.05, "color": "#FB923C" },
+    "others": { "name": "Other / Light Utility", "pcu": 0.8, "defaultShare": 0.05, "color": "#A78BFA" }
+  },
+  "signalStandards": {
+    "defaultMinGreenSec": 10,
+    "defaultMaxGreenSec": 60,
+    "yellowIntervalSec": 3,
+    "allRedClearanceSec": 2,
+    "pedestrianWalkSec": 12,
+    "pedestrianClearanceSec": 6
+  }
+}

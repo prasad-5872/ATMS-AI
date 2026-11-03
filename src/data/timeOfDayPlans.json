@@ -1,0 +1,61 @@
+{
+  "activePlanId": "plan-morning-peak",
+  "plans": [
+    {
+      "id": "plan-morning-peak",
+      "name": "Morning Peak Arterial Priority",
+      "timeWindow": "07:30 - 11:00",
+      "cycleLength": 120,
+      "description": "Bi-directional coordination for primary commute arterials with extended North-South green intervals.",
+      "phases": [
+        { "id": "P1", "name": "North-South Through", "greenSec": 45, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 15 },
+        { "id": "P2", "name": "North-South Right Turn", "greenSec": 20, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 0 },
+        { "id": "P3", "name": "East-West Through", "greenSec": 30, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 12 },
+        { "id": "P4", "name": "East-West Right Turn", "greenSec": 15, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 0 }
+      ],
+      "bounds": { "minGreenSec": 10, "maxGreenSec": 65, "intergreen": 5 }
+    },
+    {
+      "id": "plan-off-peak",
+      "name": "Inter-Peak Balanced Demand",
+      "timeWindow": "11:00 - 16:30",
+      "cycleLength": 90,
+      "description": "Equitable split between main street and cross street to minimize overall network delay.",
+      "phases": [
+        { "id": "P1", "name": "North-South Through", "greenSec": 30, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 12 },
+        { "id": "P2", "name": "North-South Right Turn", "greenSec": 15, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 0 },
+        { "id": "P3", "name": "East-West Through", "greenSec": 25, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 12 },
+        { "id": "P4", "name": "East-West Right Turn", "greenSec": 10, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 0 }
+      ],
+      "bounds": { "minGreenSec": 8, "maxGreenSec": 50, "intergreen": 5 }
+    },
+    {
+      "id": "plan-evening-peak",
+      "name": "Evening Peak Dispersal",
+      "timeWindow": "16:30 - 20:30",
+      "cycleLength": 130,
+      "description": "Maximized outflow for commercial center and tech corridor egress.",
+      "phases": [
+        { "id": "P1", "name": "North-South Through", "greenSec": 40, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 15 },
+        { "id": "P2", "name": "North-South Right Turn", "greenSec": 25, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 0 },
+        { "id": "P3", "name": "East-West Through", "greenSec": 35, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 12 },
+        { "id": "P4", "name": "East-West Right Turn", "greenSec": 20, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 0 }
+      ],
+      "bounds": { "minGreenSec": 10, "maxGreenSec": 70, "intergreen": 5 }
+    },
+    {
+      "id": "plan-night",
+      "name": "Night Minimum Delay / Actuated Flashing",
+      "timeWindow": "20:30 - 07:30",
+      "cycleLength": 60,
+      "description": "Short cycles with rapid gap-out on minor approaches to avoid unnecessary driver stops.",
+      "phases": [
+        { "id": "P1", "name": "North-South Through", "greenSec": 20, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 10 },
+        { "id": "P2", "name": "North-South Right Turn", "greenSec": 10, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 0 },
+        { "id": "P3", "name": "East-West Through", "greenSec": 15, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 10 },
+        { "id": "P4", "name": "East-West Right Turn", "greenSec": 8, "yellowSec": 3, "allRedSec": 2, "pedestrianSec": 0 }
+      ],
+      "bounds": { "minGreenSec": 6, "maxGreenSec": 30, "intergreen": 5 }
+    }
+  ]
+}
